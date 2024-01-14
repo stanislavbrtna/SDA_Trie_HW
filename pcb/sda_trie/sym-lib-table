@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "sda-custom-parts")(type "KiCad")(uri "${KIPRJMOD}/sda-custom-parts.kicad_sym")(options "")(descr ""))
+)

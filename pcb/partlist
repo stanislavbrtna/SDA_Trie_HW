@@ -1,0 +1,113 @@
+Todo:
+  x- mcu basic zapojení
+    x- power
+    x- reset
+    x- programátor
+    x- uart
+  x- power:
+    x- napočítat napětí a tak
+    x- sw shutdown (baterka nejde odpojit)
+    x- irlml&usb powe detect
+  x- dac: propojení s mcu a jackem
+  - buttons/keyboard
+    x- power button
+    x- matrix dome keyboard: 43 buttons (8+6 wires)
+    - side buttons
+  x- ftdi
+  x- sd card
+  x- 20pin lcd conn + najít tenoučký drátky
+  x- lcd switcher
+  - ref voltage (check it in datasheet)
+  
+  - sense:
+    x- vbatt
+    x- vbus
+    x- lcd orientation
+      x- hall effect sensors added
+      - embed magnet in the lcd enclosure
+
+Boards:
+  - Main board     80%
+    - FR4 1,6mm
+  - Kbd board      80%
+  - Side btn board  0%
+    - 1,0 mm
+  - LCD conn board  0%
+    - 1,0 mm
+
+Reading:
+
+USB-C:
+https://hackaday.com/series_of_posts/all-about-usb-c/page/2/
+https://www.reclaimerlabs.com/blog/2017/1/12/usb-c-for-engineers-part-2
+
+Diode:
+https://www.tme.eu/cz/details/1n4148w-dio/univerzalni-diody-smd/diotec-semiconductor/1n4148w/
+
+switching diode? as backup form mbr0520
+https://www.tme.eu/cz/details/mss1p4-m3_89a/diody-schottky-smd/vishay/
+
+power switch namíszo aoz: (dokonce stejnej pinout!) 2A nísto 500mA
+https://www.tme.eu/cz/details/ap22802aw5-7/power-switches-integrovane-obvody/diodes-incorporated/
+
+switch k detekci pozice lcd:
+https://www.tme.eu/cz/details/d3sh-b1r1/mikrospinace-snap-action/omron-ocb/
+
+LCD cable:
+https://www.tme.eu/cz/details/d-1101/jednozilove-vodice-lanko/donau-elektronik/110-1/
+- na power drátky dva silnější
+
+LCD cable-board connector
+https://www.tme.eu/cz/details/ds1065-14-2x10s8br/konektory-hrebinky/connfly/ds1065-14-2-10s8br/
+https://www.tme.eu/cz/details/zl320-2x10p/konektory-hrebinky/connfly/ds1031-06-2-10p8bv41-3a/
+
+jack:
+https://www.tme.eu/cz/details/1503-21/konektory-jack/lumberg/1503-21/
+
+baterie:
+https://www.tme.eu/cz/details/accu-lp103451_cl/akumulatory/cellevia-batteries/
+
+usb conn:
+https://www.tme.eu/cz/details/ubc-ra-tf/konektory-usb-a-ieee1394/jst/ubc-ra-tf-hf/
+
+mcu:
+https://www.tme.eu/cz/details/stm32h753iit6/mikroprocesory-st/stmicroelectronics/
+
+step up:
+https://www.tme.eu/cz/details/lmr62014xmf_nopb/stabilizator-napeti-obvody-dc-dc/texas-instruments/
+
+Exp2 Conn:
+https://www.tme.eu/cz/details/zl322-2x5p/konektory-hrebinky/connfly/ds1031-08-2-5p8bs41-3a/
+https://www.tme.eu/cz/details/ds1065-03-2x5s8bv/konektory-hrebinky/connfly/ds1065-03-2-5s8bv/
+
+Uref:
+https://www.tme.eu/cz/details/tlv431afta/zdroje-napetove-reference-obvody/diodes-incorporated/
+
+SD:
+https://www.tme.eu/cz/details/mcsp-q1-08-a-sg/konektory-ke-kartam/adam-tech/mcsp-q1-08-a-sg-t-r/
+
+Ulc6:
+https://www.tme.eu/cz/details/usblc6-2sc6/ochranne-diody-site/stmicroelectronics/
+
+L1:
+https://www.tme.eu/cz/details/hcm1a4020v2-4r7-r/vykonne-tlumivky-smd/eaton-electronics/
+
+L2:
+https://www.tme.eu/cz/details/sdn0530mt100/vykonne-tlumivky-smd/viking/
+
+Osc:
+https://www.tme.eu/cz/details/16.00m-smdxt224/krystalove-rezonatory-smd/yic/
+https://www.tme.eu/cz/details/32.768k-85smxr/krystalove-rezonatory-smd/iqd-frequency-products/lfxtal016178reel/
+
+Shottky dioda pro pwrbtn: 450mV Ufwd
+https://www.tme.eu/cz/details/1n5819hw-7-f/diody-schottky-smd/diodes-incorporated/ 
+
+Keyboard - Mainboard cable&connector
+https://www.tme.eu/cz/details/05-18-a-0050-a/paskove-kabely-ffc-fpc/global-connector-technology-gct/05-18-a-0050-a-4-06-4-t/
+https://www.tme.eu/cz/details/mx-52745-1897/konektory-ffc-fpc-raster-0-5mm/molex/527451897/
+
+hall effect:
+https://cz.mouser.com/ProductDetail/Diodes-Incorporated/AH1383-HK4-7?qs=Jm2GQyTW%2FbinZBtPrcFuvg%3D%3D
+
+Caps:
+https://www.tme.eu/cz/details/t491d476m016at/tantalove-kondenzatory-smd/kemet/
